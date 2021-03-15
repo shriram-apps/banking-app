@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+$router->get('/transactions', ['as' => 'transaction', 'uses' => 'TransactionController@get']);
+$router->post('/transactions', ['as' => 'transaction', 'uses' => 'TransactionController@post']);

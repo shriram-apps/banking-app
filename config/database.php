@@ -49,7 +49,7 @@ return [
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
+            'username' => env('DB_USERNAME', 'admin'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
@@ -90,6 +90,18 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
+
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'host' => env('DB_MONGO_HOST', '127.0.0.1'),
+            'port' => env('DB_MONGO_PORT', 27017),
+            'database' => env('DB_MONGO_DATABASE', 'accounts'),
+            'username' => env('DB_MONGO_USERNAME', 'mongo-root'),
+            'password' => env('DB_MONGO_PASSWORD', 'passw0rd'),
+            'options' => [
+                'database' => env('DB_AUTHENTICATION_DATABASE', 'admin'), // required with Mongo 3+
+            ],
+        ]
 
     ],
 
