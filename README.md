@@ -5,9 +5,9 @@ Banking app helps us to fetch the transaction details of the account with differ
 ## INSTALLATION
 1. Install Composer
 2. Download the repo using **git clone** command
-3. Execute **composer install inside the project folder
-4. Add .env file with required information for MongoDB and Mysql
-5. Generate APP_KEY using **php artisan generate:key** command
+3. Execute **composer install** inside the project folder
+4. Add **.env** file with required information for MongoDB and Mysql
+5. Generate **APP_KEY** using **php artisan generate:key** command
 6. Start the application using **php artisan serve** command
 
 ## FEATURE BRANCH NAME
